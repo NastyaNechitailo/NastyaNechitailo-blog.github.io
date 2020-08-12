@@ -14,6 +14,7 @@
 [class*="col-"] {
     padding-left: 15px;
     padding-right: 15px;
+    display: flex;
 }
 .col-xs-1 {
     flex: 0 0 8.3334%;
@@ -170,6 +171,9 @@
         flex: 0 0 100%;
         max-width: 100%;
     }
+    .slide p {
+        width: 650px;
+    }
 }
 @media(min-width: 1200px) {
     .container {
@@ -228,5 +232,17 @@
     .header-row {
         flex-direction: column;
         align-items: center;
+    }
+    .navigation {
+        overflow: scroll;
+    }
+    .search {
+        display: none;
+    }
+    .right-block {
+        margin-top: 50px;
+    }
+    .menu {
+        justify-content: space-between;
     }
 }
