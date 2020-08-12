@@ -65,7 +65,7 @@
     max-width: 100%;
 }
 .search {
-    display: none;
+    overflow: hidden;
 }
 
 
@@ -181,7 +181,7 @@
         max-width: 100%;
     }
     .search {
-        display: block;
+        overflow: visible;
     }
     .slide p {
         width: 650px;
