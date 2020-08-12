@@ -18,6 +18,7 @@ a {
     position: sticky;
     top: 0;
     padding: 25px 0;
+    z-index: 10;
 }
 .logo {
     margin-top: 5px;
@@ -134,7 +135,7 @@ button:hover {
     width: 10px;
     height: 35px;
 }
-.description  h1 {
+.description  h1, .team h1 {
     margin-top: 80px;
     margin-bottom: 60px;
     margin-left: 15px;
@@ -159,7 +160,6 @@ button:hover {
     margin-top: 15px;
 }
 .links a {
-    display: block;
     margin-right: 1px;
     width: 60px;
     height: 60px;
@@ -212,4 +212,159 @@ button:hover {
     height: 50px;
     margin-right: 20px;
 }
-
+.team {
+    padding-bottom: 100px;
+}
+.member-of-team {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.links2 {
+    display: flex;
+    position: absolute;
+    left: 60px;
+    top: 125px;
+    z-index: 2;
+}
+.links2 a {
+    width: 50px;
+    height: 50px;
+    margin-right: 1px;
+    background-position: center;
+    background-color: #3a454d;
+    display: none;
+}
+.tw {
+    background-image: url("images-blog/icon\ \(9\).png");
+}
+.fb {
+    background-image: url("images-blog/icon\ \(8\).png");
+}
+.in {
+    background-image: url("images-blog/icon\ \(7\).png");
+}
+.info-member {
+    background-color: #e1e6ea;
+    padding: 20px;
+    line-height: 20px;
+    z-index: 2;
+}
+.name {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #292f36;
+}
+.position {
+    font-size: 14px;
+    font-weight: 400;
+    color: #8d8f92;
+}
+.background-block {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.20);
+    z-index: 1;
+    display: none;
+}
+.member-of-team:hover .background-block{
+    display: block;
+}
+.member-of-team:hover .links2 a {
+    display: block;
+}
+.member-of-team:hover .info-member {
+    background-color: #3a454d;
+}
+.member-of-team:hover p {
+    color: #ffffff;
+}
+.links2 a:hover {
+    background-color: #4e5a62;
+}
+.landscape {
+    background-color: #3a454d;
+    padding-bottom: 100px;
+}
+.landscape-button {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    justify-content: center;
+}
+.landscape-button button {
+    width: 150px;
+    height: 45px;
+}
+.landscape img {
+    position: relative;
+    width: 100%;
+}
+.landscape h1 {
+    color: white;
+    margin-top: 80px;
+    margin-bottom: 60px;
+    margin-left: 15px;
+    font-size: 36px;
+    font-weight: bold;
+}
+.grey-block2 {
+    margin-top: 80px;
+    background-color: #4e5a62;
+    width: 10px;
+    height: 35px;
+}
+.hover-block {
+    z-index: 2;
+    background-color: #292f36;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    height: 57px;
+    line-height: 57px;
+    display: none;
+}
+.hover-block h3 {
+    margin-left: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.cross-img {
+    z-index: 2;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("images-blog/icon\ \(10\).png");
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 70px;
+    margin: auto;
+    display: none;
+}
+.img-work {
+    margin-bottom: 30px;
+    position: relative;
+}
+.img-work:hover .hover-block {
+    display: block;
+}
+.img-work:hover .cross-img {
+    display: block;
+}
+.img-work:hover .background  {
+    display: block;
+}
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.20);
+    display: none;
+}
