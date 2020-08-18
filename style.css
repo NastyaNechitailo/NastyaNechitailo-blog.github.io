@@ -13,6 +13,9 @@ input:focus {
 a {
     display: block;
 }
+p {
+    line-height: 20px;
+}
 .header {
     background-color: #1d2126;
     position: sticky;
@@ -125,22 +128,23 @@ button:hover {
 .slide-buttons button {
     margin-right: 10px;
 }
-.description {
+.description, .list-work {
     padding-bottom: 100px;
     border-bottom: 1px solid #dde1e4;
 }
 .grey-block {
     margin-top: 80px;
-    background-color: #e1e6ea;
+    background-color: rgba(78, 90, 98, 0.30);
     width: 10px;
     height: 35px;
 }
-.description  h1, .team h1 {
+.description  h1, .team h1, .list-work h1 {
     margin-top: 80px;
     margin-bottom: 60px;
     margin-left: 15px;
     font-size: 36px;
     font-weight: bold;
+    text-transform: uppercase;
 }
 .left-block, .right-block {
     display: flex;
@@ -284,7 +288,7 @@ button:hover {
 .links2 a:hover {
     background-color: #4e5a62;
 }
-.landscape {
+.landscape, .features {
     background-color: #3a454d;
     padding-bottom: 100px;
 }
@@ -301,19 +305,13 @@ button:hover {
     position: relative;
     width: 100%;
 }
-.landscape h1 {
+.landscape h1, .features h1 {
     color: white;
     margin-top: 80px;
     margin-bottom: 60px;
     margin-left: 15px;
     font-size: 36px;
     font-weight: bold;
-}
-.grey-block2 {
-    margin-top: 80px;
-    background-color: #4e5a62;
-    width: 10px;
-    height: 35px;
 }
 .hover-block {
     z-index: 2;
@@ -367,4 +365,43 @@ button:hover {
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.20);
     display: none;
+}
+.block-work {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 70px;
+}
+.block-work img {
+    align-self: center;
+}
+.block-work h3 {
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #292f36;
+    text-align: center;
+    margin: 25px 0;
+}
+.block-work p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #8d8f92;
+    text-align: center;
+}
+.block-feature {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.block-feature h3 {
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 55px;
+    margin-bottom: 30px;
+}
+.block-feature p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #dcdfe1;
 }
