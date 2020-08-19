@@ -65,7 +65,7 @@
     max-width: 100%;
 }
 .search {
-    opacity: 0;
+    display: none;
 }
 
 
@@ -181,7 +181,7 @@
         max-width: 100%;
     }
     .search {
-        opacity: 1;
+        display: block;
     }
     .slide p {
         width: 650px;
