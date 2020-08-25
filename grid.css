@@ -186,6 +186,28 @@
     .slide p {
         width: 650px;
     }
+    .form {
+        opacity: 0;
+        visibility: hidden;
+        transition:all .3s ease-in-out;
+        position: absolute;
+        top: -130px;
+    }
+    .name {
+        margin-right: 15px;
+        width: 50%;
+    }
+    .email {
+        width: 50%;
+    }
+    .form-button {
+        position: absolute;
+        bottom: 0;
+    }
+    .show {
+        opacity: 1;
+        visibility: visible;
+    }
 }
 @media(min-width: 1200px) {
     .container {

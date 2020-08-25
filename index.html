@@ -64,8 +64,8 @@
                     </div>
                     <div class="col-xs-12">    
                         <div class="slide-buttons">
-                            <button>VIEW MORE</button>
-                            <button>VIDEO TOUR</button>
+                            <button class="button-with-hover">VIEW MORE</button>
+                            <button class="button-with-hover">VIDEO TOUR</button>
                         </div>
                     </div>
                 </div>
@@ -143,7 +143,7 @@
                                 <a href="" class="in"></a>
                             </div> 
                             <div class="info-member">
-                                <p class="name">Gloria Bromley</p>
+                                <p class="name-member">Gloria Bromley</p>
                                 <p class="position">CEO and Founder</p>
                             </div>
                         </div>
@@ -158,7 +158,7 @@
                                 <a href="" class="in"></a>
                             </div>
                             <div class="info-member">
-                                <p class="name">Paul Torres</p>
+                                <p class="name-member">Paul Torres</p>
                                 <p class="position">Head of Development</p>
                             </div>
                         </div>
@@ -173,7 +173,7 @@
                                 <a href="" class="in"></a>
                             </div>
                             <div class="info-member">
-                                <p class="name">Judith Gillette</p>
+                                <p class="name-member">Judith Gillette</p>
                                 <p class="position">Graphic Desinger</p>
                             </div>
                         </div>
@@ -188,7 +188,7 @@
                                 <a href="" class="in"></a>
                             </div>   
                             <div class="info-member">
-                                <p class="name">Delores Reed</p>
+                                <p class="name-member">Delores Reed</p>
                                 <p class="position">Client Service Director</p>
                             </div>
                         </div>
@@ -265,7 +265,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-12 landscape-button"><button>SHOW ME MORE.</button></div>
+                    <div class="col-xs-12 landscape-button"><button class="button-with-hover">SHOW ME MORE.</button></div>
                 </div>
             </div>
         </div>
@@ -363,8 +363,24 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique nec dolor non, ornare sagittis dolor. Nulla vestibulum lacus sed molestie gravida. </p>
                         <p>Cras fermentum elit quis magna congue, <span>vel sodales</span> arcu vestibulum. Nunc lobortis dui magna, quis dapibus lacus</p>
                     </div>
-                    <div class="col-xs-12 col-md-6">
-                        <button>Send message</button>
+                    <div class="col-xs-12 col-md-6 form-block">
+                        <form action="" class="form">
+                            <div class="form-row">
+                                <div class="name">
+                                    <h6>Your name</h6>
+                                    <input type="name" name="name">
+                                </div>
+                                <div class="email">
+                                    <h6>Your email</h6>
+                                    <input type="email">
+                                </div>
+                            </div>
+                            <div class="message">
+                                <h6>Your message</h6>
+                                <textarea name=""></textarea>
+                            </div>
+                        </form>
+                        <button class="form-button">Send message</button>
                     </div>
                 </div>
             </div>
@@ -386,6 +402,25 @@
             </div>
         </div>
     </footer>
+    <div class="container">
+        <div class="modal">
+            <form class="modal-block" action="">
+                <div class="close">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z"/>
+                        <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z"/>
+                    </svg>
+                </div>
+                <h3>Registration form</h3>
+                <h6>Your email</h6>
+                <input class="input" type="email">
+                <h6>Your password</h6>
+                <input class="input" type="password">
+                <input class="button-submit" type="submit" value="SUBMIT">
+            </form>
+        </div>
+    </div>
     <script src="app.js"></script>
 </body> 
 </html>
