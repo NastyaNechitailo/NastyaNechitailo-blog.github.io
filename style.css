@@ -109,7 +109,7 @@ p {
     .navigation.active-menu {
         opacity: 1;
         visibility: visible;
-        top: 34px;
+        top: 78px;
         transform: translateX(0);
         padding: 25px;
         background-color: #1d2126;

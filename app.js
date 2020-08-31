@@ -22,17 +22,19 @@ let showMessageButton = document.querySelector(".form-button");
 // scroll form
     let modal = document.querySelector(".modal");
     let buttonClose = document.querySelector(".close");
-    let scrollHeight = document.body.scrollHeight / 2;
-    console.log(scrollHeight)
-
-    window.addEventListener("scroll", function() {
-    let scrollDistance = window.scrollY;
-    if(scrollDistance == scrollHeight) {
+    
+    function openModal() {
         modal.classList.add("show")
         modal.classList.remove("hide")
-        console.log("skjnva")
-    } 
-})
+    }
+
+    function showModalByScroll() {
+        if(window.pageYOffset > document.documentElement.scrollHeight/2) {
+            openModal()
+            removeEventListener("scroll", showModalByScroll)
+        }
+    }
+    window.addEventListener("scroll", showModalByScroll)
 
 function closeModal() {
     modal.classList.add("hide");
@@ -46,3 +48,6 @@ modal.addEventListener("click", function(e) {
         closeModal()
     }
 })
+
+// AOS
+AOS.init();
